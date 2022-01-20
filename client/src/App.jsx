@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Link, Route, useParams, useNavigate } from "react-router-dom";
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 import AboutMe from "./components/pages/AboutMe/AboutMe";
 import Contact from "./components/pages/Contact/Contact";
 import Home from "./components/pages/Home/Home";
@@ -11,6 +13,15 @@ const App = () => {
 
     return ( 
         <div>Dan Prudhomme Jr
+<div>
+    <ButtonGroup variant="contained" aria-label="outlined primary button group">
+        <Button>Home</Button>
+        <Button>About Me</Button>
+        <Button>Projects</Button>
+        <Button>Contact</Button>
+    </ButtonGroup>
+</div>
+
 
 <Routes>
           <Route
@@ -29,7 +40,7 @@ const App = () => {
             path="contact"
             element={<Contact/>} 
           ></Route>
-        </Routes>
+        </Routes> 
         </div>
      );
 }
