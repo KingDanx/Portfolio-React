@@ -10,7 +10,7 @@ const Home = () => {
         <div>Home
 
             <div>
-                <Button variant="contained" sx={{borderRadius: "500px"}}>Lets Work Together<a href={resume} style={{textDecoration: 'none'}} download="Dan Prudhomme - Resume"></a></Button>
+            <a href={resume} style={{textDecoration: 'none'}} download="Dan Prudhomme - Resume"> <Button variant="contained" sx={{borderRadius: "500px"}}>Lets Work Together</Button></a>
             </div>
         </div>
      );
