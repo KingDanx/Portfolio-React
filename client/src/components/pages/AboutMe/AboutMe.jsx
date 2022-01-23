@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import {useTheme, useThemeUpdate} from "../../../ThemeContext";
 
 const AboutMe = () => {
+    const darkTheme = useTheme();
+    const themeStyles = {
+        backgroundColor: darkTheme ? '#333' : '#CCC',
+        color: darkTheme ? '#CCC' : '#333',
+    }
+    
     return ( 
-        <div>About Me</div>
+        <div style={themeStyles}>About Me</div>
      );
 }
  
