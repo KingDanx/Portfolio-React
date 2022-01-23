@@ -1,3 +1,29 @@
+.main {
+    width: 500px;
+    height: 350px;
+    background-color: #F2F7F2;
+    border-color: #EEE;
+    border-radius: 10px;
+    border-width: 2px;
+  
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .main > * {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .me {
+    align-self: center;
+    justify-self: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+
 @keyframes rotate {
     from {
       transform: rotate(360deg);
@@ -20,6 +46,6 @@
     animation: spinAround 15s linear infinite;
   }
 
-  .main > * > img {
+  .main > * > * {
     animation: rotate 15s linear infinite;
   }
