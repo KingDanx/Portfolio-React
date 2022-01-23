@@ -1,6 +1,25 @@
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-    text-transform: none!important;
-    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms!important;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms!important;
-    color: #fff!important;
-}
+@keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes spinAround {
+    from {
+      transform: rotate(0deg) translate(140px);
+    }
+    to {
+      transform: rotate(360deg) translate(140px);
+    }
+  }
+
+  .item {
+    animation: spinAround 15s linear infinite;
+  }
+
+  .main > * > img {
+    animation: rotate 15s linear infinite;
+  }
