@@ -6,8 +6,8 @@ import { useSwitch } from '@mui/base/SwitchUnstyled';
 const SwitchRoot = styled('span')`
   display: inline-block;
   position: relative;
-  width: 62px;
-  height: 34px;
+  width: 40px;
+  height: 20px;
   padding: 7px;
 `;
 
@@ -32,7 +32,7 @@ const SwitchThumb = styled('span')(
   height: 32px;
   border-radius: 16px;
   top: 1px;
-  left: 7px;
+  left: 4px;
   transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:before {
@@ -63,7 +63,7 @@ const SwitchThumb = styled('span')(
 
 const SwitchTrack = styled('span')(
   ({ theme }) => `
-  background-color: ${theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be'};
+  background-color: ${theme.palette.mode === 'dark' ? '#8796A5' : '#5a6f84'};
   border-radius: 10px;
   width: 100%;
   height: 100%;

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Link, Route, useParams, useNavigate } from "react-router-dom";
-import {ThemeProvider} from "./ThemeContext.jsx";
-import {useTheme, useThemeUpdate} from "./ThemeContext";
+import { ThemeProvider } from "./ThemeContext.jsx";
+import { useTheme, useThemeUpdate } from "./ThemeContext";
 import Button from "@mui/material/Button";
-import Switch from '@mui/material/Switch';
+import Switch from "@mui/material/Switch";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import AboutMe from "./components/pages/AboutMe/AboutMe";
 import Contact from "./components/pages/Contact/Contact";
@@ -13,16 +13,10 @@ import ResponsiveAppBar from "./components/AppBar.jsx";
 
 const App = () => {
   const navigate = useNavigate();
-  const darkTheme = useTheme();
-  const toggleTheme = useThemeUpdate();
 
   return (
-    <ThemeProvider>
-      
       <div>
-      <ResponsiveAppBar/>
-
-      
+        <ResponsiveAppBar />
         <div>
           <ButtonGroup
             variant="contained"
@@ -50,7 +44,6 @@ const App = () => {
           <Route path="contact" element={<Contact />}></Route>
         </Routes>
       </div>
-    </ThemeProvider>
   );
 };
 
