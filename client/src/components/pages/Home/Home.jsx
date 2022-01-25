@@ -27,7 +27,7 @@ const Home = () => {
       <h1>Dan Prudhomme Jr</h1>
       <div>
         
-        <div className="main" style={themeStyles} onClick={toggleTheme}>
+        <div className="main" style={themeStyles}>
           <img src={dan} alt="image of Dan Prudhomme Jr" className="me" />
           <div className="item">
             <img src={js} height="50px" alt="image of JavaScript" />

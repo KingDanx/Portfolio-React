@@ -13,6 +13,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Switch from '@mui/material/Switch';
+import UseSwitchesCustom from "./DarkModeToggle.jsx";
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -109,7 +110,10 @@ const ResponsiveAppBar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-            <Switch onClick={toggleTheme}/>
+                <div onClick={toggleTheme}>
+                <UseSwitchesCustom/>
+                </div>
+            
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}

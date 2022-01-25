@@ -20,9 +20,8 @@ const App = () => {
     <ThemeProvider>
       
       <div>
-      
       <ResponsiveAppBar/>
-      
+
       
         <div>
           <ButtonGroup
