@@ -114,11 +114,10 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <div onClick={toggleTheme}>
-                <UseSwitchesCustom />
-              </div>
-            </Tooltip>
+            <div onClick={toggleTheme}>
+              <UseSwitchesCustom />
+            </div>
+
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"

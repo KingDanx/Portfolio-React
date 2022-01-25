@@ -13,9 +13,18 @@ import ResponsiveAppBar from "./components/AppBar.jsx";
 
 const App = () => {
   const navigate = useNavigate();
+  const darkTheme = useTheme();
+  const toggleTheme = useThemeUpdate();
+
+  const themeStyles = {
+    backgroundColor: darkTheme ? "#000000e6" : "#fff",
+    color: darkTheme ? "#CCC" : "#333",
+    height: "100%",
+  };
+
 
   return (
-      <div>
+      <div style={themeStyles}>
         <ResponsiveAppBar />
         <div>
           <ButtonGroup
