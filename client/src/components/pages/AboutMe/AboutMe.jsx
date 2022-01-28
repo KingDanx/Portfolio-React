@@ -5,56 +5,59 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@material-ui/lab/TabContext";
 import TabList from "@material-ui/lab/TabList";
 import TabPanel from "@material-ui/lab/TabPanel";
+import Carousel from "react-material-ui-carousel";
+import { Paper, Button } from "@mui/material";
 
-const AboutMe = () => {
+const AboutMe = (props) => {
   const [value, setValue] = React.useState("1");
+  const [autoPlay, setAutoPlay] = useState(false);
   const darkTheme = useTheme();
   const themeStyles = {
     backgroundColor: darkTheme ? "#333" : "#CCC",
     color: darkTheme ? "#CCC" : "#333",
   };
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
+  const Item = (props) => {
+    return (
+      <div style={themeStyles}>
+        <h2>{props.item.name}</h2>
+        <p>{props.item.description}</p>
+      </div>
+    );
   };
 
-  return (
-    <Box sx={{ width: "100%", typography: "body1" }} style={themeStyles}>
-      <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <Tab label="Hire Me Because…" value="1" />
-            <Tab label="Passion For Programming" value="2" />
-            <Tab
-              label="Three Words About My Professional Qualities"
-              value="3"
-            />
-            <Tab
-              label="Three Words That Describe The Best Role For Me"
-              value="4"
-            />
-          </TabList>
-        </Box>
-        <TabPanel value="1">
+  const items = [
+    {
+      name: "Hire Me Because…",
+      description: (
+        <p>
           I have over 11 years of troubleshooting and problem-solving
           experience. I see myself as a partner rather than an employee.
           Meaning, I feel the success of the company I work with is directly
           tied to the product and accomplishments I provide to the company. I am
           a dedicated, focused, and punctual individual that will not accept
           failure on my behalf.
-        </TabPanel>
-        <TabPanel value="2">
-          {" "}
+        </p>
+      ),
+    },
+    {
+      name: "Passion For Programming",
+      description: (
+        <p>
           I am an addict of programming. Whether I’m looking at a website, a
           piece of electronic equipment, or a toy, all I can think about is what
           technologies, loops, arrays, or conditionals went into creating its
           behavior. I will frequently find myself programing my own projects for
           hours on end without realizing a moment has passed. Solving a problem
           that previously seemed impossible gives me an abundance of thrill,
-          fulfillment, and motivation to continue.
-        </TabPanel>
-        <TabPanel value="3">
-          {" "}
+          fulfillment, and motivation to continue!
+        </p>
+      ),
+    },
+    {
+      name: "Three Words About My Professional Qualities",
+      description: (
+        <div>
           <p>
             Persistent: When presented with a problem I do not give up until I
             find some kind of solution. There are so many ways to solve problems
@@ -69,44 +72,33 @@ const AboutMe = () => {
             be on the frontier of innovation.
           </p>
           <p>
-            {" "}
             Philomath: I have a passion for learning. I believe receiving
             mentorship is invaluable. I spend a minimum of three hours a day
             listening or watching educational content, from programming to
             astrophysics, to anthropology, and much more.
           </p>
-        </TabPanel>
-        <TabPanel value="4">
-          <p>
-            {" "}
-            Challenging: I am a natural problem solver and I am ready and
-            willing to take on the complex task my team assigns to me.{" "}
-          </p>
+        </div>
+      ),
+    },
+    {
+      name: "Passion For Programming",
+      description:
+        "I am an addict of programming. Whether I’m looking at a website, a piece of electronic equipment, or a toy, all I can think about is what technologies, loops, arrays, or conditionals went into creating its behavior. I will frequently find myself programing my own projects for hours on end without realizing a moment has passed. Solving a problem that previously seemed impossible gives me an abundance of thrill, fulfillment, and motivation to continue.!",
+    },
+  ];
 
-          <p>
-            {" "}
-            Meaningful: I want my work to be fulfilling. I want to develop
-            exceptional products that are easy to use, understand, and better
-            the lives of consumers.{" "}
-          </p>
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
-          <p>
-            {" "}
-            Growth: I want to be in a position where I can absorb knowledge from
-            my mentors and peers. I am eager to learn and grow as a developer to
-            make the best products I am capable of creating.
-          </p>
-        </TabPanel>
-      </TabContext>
-    </Box>
-    // <div style={themeStyles}
-
-    //   </div>
-    //   <h2></h2>
-    //   <div>
-
-    //   </div>
-    // </div>
+  return (
+    <div style={{ width: "50%"}}>
+      <Carousel interval={10000} fullHeightHover={false} autoPlay={false}>
+        {items.map((item, i) => (
+          <Item key={i} item={item} />
+        ))}
+      </Carousel>
+    </div>
   );
 };
 
