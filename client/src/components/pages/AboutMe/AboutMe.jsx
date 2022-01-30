@@ -92,7 +92,7 @@ const AboutMe = (props) => {
     };
 
     return (
-        <div style={{width: "75%"}}>
+        <div>
             {/* <Carousel interval={10000} fullHeightHover={false} autoPlay={false}>
                 {items.map((item, i) => (
                     <Item key={i} item={item} />
@@ -100,7 +100,7 @@ const AboutMe = (props) => {
             </Carousel> */}
 
             <div>
-                <BootCarousel />
+                <BootCarousel/>
             </div>
         </div>
     );

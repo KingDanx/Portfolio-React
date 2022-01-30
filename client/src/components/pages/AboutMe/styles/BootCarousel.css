@@ -1,4 +1,3 @@
-.carousel-item {
-    height: 100px;
-    width: 100px;
+.carousel-control-next, .carousel-control-prev {
+    width: 5%!important;
 }
