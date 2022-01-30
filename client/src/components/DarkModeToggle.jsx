@@ -6,8 +6,8 @@ import { useSwitch } from '@mui/base/SwitchUnstyled';
 const SwitchRoot = styled('span')`
   display: inline-block;
   position: relative;
-  width: 40px;
-  height: 20px;
+  width: 60px;
+  height: 32px;
   padding: 7px;
 `;
 
@@ -50,7 +50,7 @@ const SwitchThumb = styled('span')(
   }
 
   &.checked {
-    transform: translateX(16px);
+    transform: translateX(20px);
     
     &:before {
       background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
