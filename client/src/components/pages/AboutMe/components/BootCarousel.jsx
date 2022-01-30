@@ -4,49 +4,42 @@ import img from "../../../../images/HTML.png";
 
 const BootCarousel = () => {
     const [index, setIndex] = useState(0);
-  
+
     const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
+        setIndex(selectedIndex);
     };
 
-    return ( 
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
-        <h3>First slide label</h3>
-        <p style={{marginBottom: "20px"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={img}
-            alt="Second slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
-            alt="Third slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-     );
+    return (
+        <Carousel activeIndex={index} onSelect={handleSelect} style={{width: "75%"}}>
+            <Carousel.Item as="div" style={{backgroundColor: "white", borderRadius: "20px", padding: "20px"}}>
+            <h3>dirst slide label</h3>
+            <p style={{ marginBottom: "20px" }}>Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <br />
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className='carousel-item'>
+
+                </div>
+
+                <Carousel.Caption>
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className='carousel-item'>
+
+                </div>
+
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+    );
 }
- 
+
 export default BootCarousel;
