@@ -63,7 +63,7 @@ const Home = () => {
                         />
                     </div>
                 </div>
-                <div><BootCarousel/></div>
+                <div style={{height: "1px"}}><BootCarousel/></div>
                 <div>Open to Work:
                     <a
                         href={resume}

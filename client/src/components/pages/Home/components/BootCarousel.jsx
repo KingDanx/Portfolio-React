@@ -14,7 +14,7 @@ const BootCarousel = () => {
     const themeStyles = {
         backgroundColor: darkTheme ? "#333" : "#CCC",
         color: darkTheme ? "#CCC" : "#333",
-        borderRadius: "20px",
+        borderRadius: "10px",
         padding: "20px",
     };
 
