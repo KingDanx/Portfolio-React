@@ -1,11 +1,10 @@
 .main {
-    width: 500px;
+    width: 90%;
     height: 350px;
     background-color: #F2F7F2;
     border-color: #EEE;
     border-radius: 10px;
     border-width: 2px;
-  
     display: grid;
     justify-content: center;
     align-content: center;
@@ -48,4 +47,10 @@
 
   .main > * > * {
     animation: rotate 15s linear infinite;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }

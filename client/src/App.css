@@ -1,6 +1,6 @@
 html {
-  height: 110%;
-  overflow: hidden
+  min-height: 100%;
+  overflow: scroll;
 }
 
 body {

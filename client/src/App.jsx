@@ -19,7 +19,7 @@ const App = () => {
   const themeStyles = {
     backgroundColor: darkTheme ? "#000000e6" : "#fff",
     color: darkTheme ? "#CCC" : "#333",
-    height: "100%",
+    minHeight: "100%",
   };
 
 
