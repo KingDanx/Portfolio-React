@@ -26,26 +26,6 @@ const App = () => {
   return (
       <div style={themeStyles}>
         <ResponsiveAppBar />
-        <div>
-          <ButtonGroup
-            variant="contained"
-            aria-label="outlined primary button group"
-          >
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <Button>Home</Button>
-            </Link>
-            <Link to="aboutme" style={{ textDecoration: "none" }}>
-              <Button>About Me</Button>
-            </Link>
-            <Link to="projects" style={{ textDecoration: "none" }}>
-              <Button>Projects</Button>
-            </Link>
-            <Link to="contact" style={{ textDecoration: "none" }}>
-              <Button>Contact</Button>
-            </Link>
-          </ButtonGroup>
-        </div>
-
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="projects" element={<Projects />}></Route>

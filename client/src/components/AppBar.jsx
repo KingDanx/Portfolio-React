@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import { Routes, Link, Route, useParams, useNavigate } from "react-router-dom";
 import { useTheme, useThemeUpdate } from "../ThemeContext";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -103,13 +104,16 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
+              <Link style={{textDecoration: "none"}} to={page === "Home" ? "/" : `/${page.toLowerCase().replace(" ", "")}`}>
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {page}
+                  {console.log(page.toLowerCase())}
+                </Button>
+             </Link>
             ))}
           </Box>
 
