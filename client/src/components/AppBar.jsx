@@ -15,7 +15,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Switch from "@mui/material/Switch";
 import UseSwitchesCustom from "./DarkModeToggle.jsx";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["Home", "About Me", "Projects", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
