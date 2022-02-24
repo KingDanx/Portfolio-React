@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import ProjectAccordion from './components/Accordion.jsx';
 
 const Projects = () => {
     return ( 
-        <div>Projects</div>
+        <div>Projects
+            <div>
+                <ProjectAccordion/>
+            </div>
+        </div>
      );
 }
  
