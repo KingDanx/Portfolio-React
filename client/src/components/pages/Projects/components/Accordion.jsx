@@ -5,8 +5,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const ProjectAccordion = () => {
-    const [expanded, setExpanded] = React.useState(false);
+const ProjectAccordion = ({expanded, setExpanded}) => {
+    
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
