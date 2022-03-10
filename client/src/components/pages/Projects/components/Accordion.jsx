@@ -4,6 +4,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import '../styles/Accordion.css';
 
 const ProjectAccordion = ({expanded, setExpanded}) => {
     
@@ -12,7 +13,7 @@ const ProjectAccordion = ({expanded, setExpanded}) => {
     setExpanded(isExpanded ? panel : false);
   };
     return ( 
-        <div><Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+        <div className='accordion'><Accordion expanded={expanded === 'capstone'} onChange={handleChange('capstone')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
@@ -29,7 +30,7 @@ const ProjectAccordion = ({expanded, setExpanded}) => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+      <Accordion expanded={expanded === 'javascript'} onChange={handleChange('javascript')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2bh-content"
@@ -45,7 +46,7 @@ const ProjectAccordion = ({expanded, setExpanded}) => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+      <Accordion expanded={expanded === 'arduino'} onChange={handleChange('arduino')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3bh-content"
@@ -62,7 +63,7 @@ const ProjectAccordion = ({expanded, setExpanded}) => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+      <Accordion expanded={expanded === 'other'} onChange={handleChange('other')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4bh-content"

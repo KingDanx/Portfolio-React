@@ -4,6 +4,9 @@ iframe {
 }
 
 .project-split {
-    display: grid;
-    grid-template-columns: 30% 70%;
+    margin-top: 24px;
+    display: grid!important;
+    grid-template-columns: 50% 50%;
+    justify-items: center!important;
+    align-items: center!important;
 }

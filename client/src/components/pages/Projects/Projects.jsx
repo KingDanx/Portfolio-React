@@ -11,16 +11,16 @@ const Projects = () => {
       </div>
       <div>
         <iframe
-          width="560"
-          height="315"
+          width="711"
+          height="400"
           src={
-            expanded === `panel1`
+            expanded === `capstone`
               ? "https://www.youtube.com/embed/nbhxBLQ54oE"
-              : expanded === `panel2`
+              : expanded === `javascript`
               ? "https://www.youtube.com/embed/AfFFAE40cb0"
-              : expanded === `panel3`
-              ? "https://www.youtube.com/embed/FD27fJ21Gp8"
-              : expanded === `panel4`
+              : expanded === `arduino`
+              ? "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6907492577902530560?compact=1"
+              : expanded === `other`
               ? "https://www.youtube.com/embed/FA27fJ22Gp8"
               : null
           }
