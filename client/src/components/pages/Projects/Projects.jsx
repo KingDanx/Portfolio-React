@@ -10,7 +10,7 @@ const Projects = () => {
                 <ProjectAccordion expanded={expanded} setExpanded={setExpanded} />
             </div>
             <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/uBk-Wst_7aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src={expanded === `panel1` ? "https://www.youtube.com/embed/uBk-Wst_7aA" : expanded === `panel2` ? "https://www.youtube.com/embed/FD27fJ22Gp8" : null} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     );
