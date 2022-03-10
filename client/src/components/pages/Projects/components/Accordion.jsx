@@ -30,7 +30,7 @@ const ProjectAccordion = ({expanded, setExpanded}) => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'javascript'} onChange={handleChange('javascript')}>
+      <Accordion default expanded={expanded === 'javascript'} onChange={handleChange('javascript')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2bh-content"

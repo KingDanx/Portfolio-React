@@ -3,7 +3,7 @@ import ProjectAccordion from "./components/Accordion.jsx";
 import "./styles/Projects.css";
 
 const Projects = () => {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState(`capstone`);
   return (
     <div className="project-split">
       <div>
