@@ -97,6 +97,17 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
             covers Rock Rock crushes Lizard Lizard poisons Spock Spock smashes
             Scissors Scissors decapitates Lizard Lizard eats Paper Paper
             disproves Spock Spock vaporizes Rock
+            <br />
+            <br />
+            <a
+              href="https://github.com/pedrobando/most-wanted-user-stories"
+              target={"_blank"}
+            >
+              <b>Most Wanted</b>
+            </a>{" "}
+            - this is a ancestry style application utilizing recursion and
+            functional programing. Navigate through alerts to find the person
+            you're looking for in the data base!
           </Typography>
         </AccordionDetails>
       </Accordion>
