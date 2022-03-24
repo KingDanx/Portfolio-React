@@ -46,6 +46,18 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+            <a href="https://ambitious-forgetfuls.com" target={"_blank"}>
+              <b>Ambitious Forgetfuls - Live</b>
+            </a>
+            <br />
+            <a
+              href="https://github.com/KingDanx/Ambitious-Forgetfuls-Public"
+              target={"_blank"}
+            >
+              <b>Ambitious Forgetfuls - Source</b>
+            </a>
+            <br />
+            <br />
             This is full stack task completion social network created using the
             MERN stack. With 25 current users, 30 created tasks, and over 600
             days of daily logs stored in a MongoDB database. Ambitious
@@ -58,6 +70,8 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
             tracker that will reward points for completed tasks. Users can have
             multiple task tracker panels, consisting of private personal tasks
             and shared team tasks to be completed with others by invitation.
+            <br />
+            <br />
             Technologies: MongoDB, Express.js, React.js, Node.js, Chart.js.
           </Typography>
         </AccordionDetails>
@@ -127,8 +141,17 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
+            <a
+              href="https://github.com/KingDanx/Bathroom-Switcher"
+              target={"_blank"}
+            >
+              <b>Bathroom Switcher</b>
+            </a>{" "}
+            - have you ever wondered how long it has been since a stall was
+            available to use? This program will connect an arduino
+            microcontroller to an eight segment display and to two magnetic
+            switches. If both switches are closed, then the timer will count up.
+            Once one of the switches open the timer is reset.
           </Typography>
         </AccordionDetails>
       </Accordion>
