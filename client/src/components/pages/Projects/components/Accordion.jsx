@@ -46,15 +46,15 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            This is full stack task completion social network created using the MERN
-            stack. With 25 current users, 30 created tasks, and over 600 days of
-            daily logs stored in a MongoDB database. Ambitious Forgetfuls App In
-            today’s whirlwind of chores, orders, and to-do lists, it can be
-            difficult to keep track of all your tasks as well as your progress
-            in each task! Ambitious Forgetful can be used as a tracker for
-            employee contributions in the workplace, a reminder tool for
-            commonly forgotten tasks in our adult lives, and as an incentive to
-            reward children for completing daily chores. It is a daily task
+            This is full stack task completion social network created using the
+            MERN stack. With 25 current users, 30 created tasks, and over 600
+            days of daily logs stored in a MongoDB database. Ambitious
+            Forgetfuls App In today’s whirlwind of chores, orders, and to-do
+            lists, it can be difficult to keep track of all your tasks as well
+            as your progress in each task! Ambitious Forgetful can be used as a
+            tracker for employee contributions in the workplace, a reminder tool
+            for commonly forgotten tasks in our adult lives, and as an incentive
+            to reward children for completing daily chores. It is a daily task
             tracker that will reward points for completed tasks. Users can have
             multiple task tracker panels, consisting of private personal tasks
             and shared team tasks to be completed with others by invitation.
@@ -79,6 +79,16 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+            <a
+              href="https://github.com/KingDanx/React-Grader"
+              target={"_blank"}
+            >
+              React Grader
+            </a>{" "}
+            - a responsive full stack unit conversion test grading application.
+            This can be used to create a templet of a test then quickly grade
+            each test by inputing students answers from their paper worksheet.
+            <br />
             Donec placerat, lectus sed mattis semper, neque lectus feugiat
             lectus, varius pulvinar diam eros in elit. Pellentesque convallis
             laoreet laoreet.
