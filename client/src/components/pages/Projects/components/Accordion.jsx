@@ -83,15 +83,20 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
               href="https://github.com/KingDanx/React-Grader"
               target={"_blank"}
             >
-              React Grader
+              <b>React Grader</b>
             </a>{" "}
             - a responsive full stack unit conversion test grading application.
             This can be used to create a templet of a test then quickly grade
             each test by inputing students answers from their paper worksheet.
             <br />
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat
-            lectus, varius pulvinar diam eros in elit. Pellentesque convallis
-            laoreet laoreet.
+            <br />
+            <a href="https://github.com/KingDanx/RPSLS2.0" target={"_blank"}>
+              <b>RSPLS</b>
+            </a>{" "}
+            - Node.js/OOP - Rock crushes Scissors Scissors cuts Paper Paper
+            covers Rock Rock crushes Lizard Lizard poisons Spock Spock smashes
+            Scissors Scissors decapitates Lizard Lizard eats Paper Paper
+            disproves Spock Spock vaporizes Rock
           </Typography>
         </AccordionDetails>
       </Accordion>
