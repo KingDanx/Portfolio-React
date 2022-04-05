@@ -113,16 +113,31 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
             <a
               href="https://github.com/KingDanx/React-Grader"
               target={"_blank"}
+              style={{ textDecoration: "none" }}
             >
-              <b>React Grader</b>
+              <Button
+                variant="contained"
+                sx={{ borderRadius: "500px", textTransform: "none" }}
+              >
+                React Grader
+              </Button>{" "}
             </a>{" "}
             - a responsive full stack unit conversion test grading application.
             This can be used to create a templet of a test then quickly grade
             each test by inputing students answers from their paper worksheet.
             <br />
             <br />
-            <a href="https://github.com/KingDanx/RPSLS2.0" target={"_blank"}>
-              <b>RSPLS</b>
+            <a
+              href="https://github.com/KingDanx/RPSLS2.0"
+              target={"_blank"}
+              style={{ textDecoration: "none" }}
+            >
+              <Button
+                variant="contained"
+                sx={{ borderRadius: "500px", textTransform: "none" }}
+              >
+                RSPLS
+              </Button>{" "}
             </a>{" "}
             - Node.js/OOP - Rock crushes Scissors Scissors cuts Paper Paper
             covers Rock Rock crushes Lizard Lizard poisons Spock Spock smashes
@@ -133,8 +148,14 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
             <a
               href="https://github.com/pedrobando/most-wanted-user-stories"
               target={"_blank"}
+              style={{ textDecoration: "none" }}
             >
-              <b>Most Wanted</b>
+              <Button
+                variant="contained"
+                sx={{ borderRadius: "500px", textTransform: "none" }}
+              >
+                Most Wanted
+              </Button>{" "}
             </a>{" "}
             - this is a ancestry style application utilizing recursion and
             functional programing. Navigate through alerts to find the person
