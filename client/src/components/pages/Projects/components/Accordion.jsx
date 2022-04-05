@@ -182,8 +182,14 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
             <a
               href="https://github.com/KingDanx/Bathroom-Switcher"
               target={"_blank"}
+              style={{ textDecoration: "none" }}
             >
-              <b>Bathroom Switcher</b>
+              <Button
+                variant="contained"
+                sx={{ borderRadius: "500px", textTransform: "none" }}
+              >
+                Bathroom Switcher
+              </Button>{" "}
             </a>{" "}
             - have you ever wondered how long it has been since a stall was
             available to use? This program will connect an arduino
