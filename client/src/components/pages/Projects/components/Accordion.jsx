@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useTheme, useThemeUpdate } from "../../../../ThemeContext";
 import Accordion from "@mui/material/Accordion";
+import Button from "@mui/material/Button";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
@@ -46,15 +47,31 @@ const ProjectAccordion = ({ expanded, setExpanded }) => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <a href="https://ambitious-forgetfuls.com" target={"_blank"}>
-              <b>Ambitious Forgetfuls - Live</b>
+            <a
+              href="https://ambitious-forgetfuls.com"
+              target={"_blank"}
+              style={{ textDecoration: "none" }}
+            >
+              <Button
+                variant="contained"
+                sx={{ borderRadius: "500px", textTransform: "none" }}
+              >
+                Ambitious Forgetfuls - Live
+              </Button>
             </a>
+            <br />
             <br />
             <a
               href="https://github.com/KingDanx/Ambitious-Forgetfuls-Public"
               target={"_blank"}
+              style={{ textDecoration: "none" }}
             >
-              <b>Ambitious Forgetfuls - Source</b>
+              <Button
+                variant="contained"
+                sx={{ borderRadius: "500px", textTransform: "none" }}
+              >
+                Ambitious Forgetfuls - Source
+              </Button>
             </a>
             <br />
             <br />
