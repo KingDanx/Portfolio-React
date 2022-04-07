@@ -15,6 +15,13 @@ const Contact = () => {
       >
         <Button variant="contained">E-mail</Button>
       </a>
+      <a
+        href="https://www.facebook.com/dannyprud"
+        target="_blank"
+        style={{ textDecoration: "none" }}
+      >
+        <Button variant="contained">Facebook</Button>
+      </a>
     </div>
   );
 };
