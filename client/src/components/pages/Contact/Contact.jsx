@@ -56,7 +56,7 @@ const etsy = {
         target="_blank"
         style={{ textDecoration: "none" }}
       >
-        <Button sx={etsy} variant="contained">Instagram</Button>
+        <Button sx={etsy} variant="contained">Etsy</Button>
       </a>
     </div>
   );
