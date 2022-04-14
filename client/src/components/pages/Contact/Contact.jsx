@@ -13,14 +13,22 @@ const Contact = () => {
         target="_blank"
         style={{ textDecoration: "none" }}
       >
-        <Button variant="contained">E-mail</Button>
+        <Button sx={{borderRadius: "500px"}} variant="contained">E-mail</Button>
       </a>
       <a
         href="https://www.facebook.com/dannyprud"
         target="_blank"
         style={{ textDecoration: "none" }}
       >
-        <Button variant="contained">Facebook</Button>
+        <Button sx={{borderRadius: "500px"}} variant="contained">Facebook</Button>
+      </a>
+      
+      <a
+        href="https://www.instagram.com/kingdanx"
+        target="_blank"
+        style={{ textDecoration: "none" }}
+      >
+        <Button sx={{borderRadius: "500px"}} variant="contained">Instagram</Button>
       </a>
     </div>
   );
