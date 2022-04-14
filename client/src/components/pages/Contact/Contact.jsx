@@ -17,8 +17,9 @@ const facebook = {
 const email = {
     borderRadius: "500px",
     minWidth: "118px",
-    backgroundColor: "#07f07"
+    backgroundColor: "#1ec569",
 }
+
 const etsy = {
     borderRadius: "500px",
     minWidth: "118px",
