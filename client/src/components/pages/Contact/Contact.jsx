@@ -5,8 +5,20 @@ const Contact = () => {
   
 const instagram = {
     borderRadius: "500px",
-    backgroundImage: "linear-gradient(to right, #f5cb00, #fb0b01 50%, #aa3a9c 75%)",
+    backgroundImage: "linear-gradient(to right, #f5cb00, #fb0b01 50%, #f100d2 75%)",
+    minWidth: "118px",
 } 
+
+const facebook = {
+    borderRadius: "500px",
+    minWidth: "118px",
+}
+
+const email = {
+    borderRadius: "500px",
+    minWidth: "118px",
+    backgroundColor: "#07af07"
+}
 
   return (
     <div>
@@ -15,14 +27,14 @@ const instagram = {
         target="_blank"
         style={{ textDecoration: "none" }}
       >
-        <Button sx={{borderRadius: "500px"}} variant="contained">E-mail</Button>
+        <Button sx={email} variant="contained">E-mail</Button>
       </a>
       <a
         href="https://www.facebook.com/dannyprud"
         target="_blank"
         style={{ textDecoration: "none" }}
       >
-        <Button sx={{borderRadius: "500px"}} variant="contained">Facebook</Button>
+        <Button sx={facebook} variant="contained">Facebook</Button>
       </a>
       
       <a
