@@ -17,7 +17,12 @@ const facebook = {
 const email = {
     borderRadius: "500px",
     minWidth: "118px",
-    backgroundColor: "#07af07"
+    backgroundColor: "#07f07"
+}
+const etsy = {
+    borderRadius: "500px",
+    minWidth: "118px",
+    backgroundColor: "#ff7300"
 }
 
   return (
@@ -43,6 +48,14 @@ const email = {
         style={{ textDecoration: "none" }}
       >
         <Button sx={instagram} variant="contained">Instagram</Button>
+      </a>
+      
+      <a
+        href="https://www.etsy.com/shop/DAPComm"
+        target="_blank"
+        style={{ textDecoration: "none" }}
+      >
+        <Button sx={etsy} variant="contained">Instagram</Button>
       </a>
     </div>
   );
