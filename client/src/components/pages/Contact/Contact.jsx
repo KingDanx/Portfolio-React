@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import Button from "@mui/material/Button";
 
 const Contact = () => {
-  const sendMail = () => {
-    window.open("mailto:test@example.com?subject=subject&body=body");
-  };
+  
+const instagram = {
+    borderRadius: "500px",
+    backgroundImage: "linear-gradient(to right, #f5cb00, #fb0b01 50%, #aa3a9c 75%)",
+} 
 
   return (
     <div>
@@ -28,7 +30,7 @@ const Contact = () => {
         target="_blank"
         style={{ textDecoration: "none" }}
       >
-        <Button sx={{borderRadius: "500px"}} variant="contained">Instagram</Button>
+        <Button sx={instagram} variant="contained">Instagram</Button>
       </a>
     </div>
   );
