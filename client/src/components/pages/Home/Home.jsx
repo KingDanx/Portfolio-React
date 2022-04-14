@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useTheme, useThemeUpdate } from "../../../ThemeContext";
 import BootCarousel from "./components/BootCarousel";
-import resume from "../../../resume/Dan Prudhomme - dev Resume.docx";
+import resume from "../../../resume/Dan Prudhomme - dev Resume 3-9-22.docx";
 import dan from "../../../images/Dan-Prudhomme.jpg";
 import js from "../../../images/javascript.png";
 import html from "../../../images/HTML.png";
